@@ -39,6 +39,7 @@ def submit_pipeline():
         arguments=arguments,
         run_name=run_name,
         experiment_name=experiment_name,
+        pipeline_name="demo-pipeline",
         mode=kfp.dsl.PipelineExecutionMode.V2_COMPATIBLE,
         enable_caching=False,
         namespace="kubeflow-user-example-com"
